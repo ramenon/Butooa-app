@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design your own bag</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <script type="text/javascript" src="bag-drawing-app.js"></script>
+  </head>
+  <body>
+    <form id="myForm">
+    <div>
+    <h4>Pick your own textile</h4>
+       <input type="radio" name="textile" value="one" CHECKED />  <img src="images/swatch1.jpg" width="80" height="80"/>
+       <input type="radio" name="textile" value="two" />  <img src="images/swatch2.jpg" width="80" height="80"/>
+       <input type="radio" name="textile" value="three" />  <img src="images/swatch3.jpg" width="80" height="80"/>
+       <input type="radio" name="textile" value="four" />  <img src="images/swatch4.jpg" width="80" height="80"/>
+       <br><br>
+       <input type="button" name="showOutline" value="Show Bag Outline" onClick="prepareCanvas('outline')"/><br><br>
+       <input type="button" name="fillTextile" value="With Textile" onClick="prepareCanvas('fill')"/>
+
+    </div>
+    </form>
+    <div id="canvasDiv"></div>
+  </body>
+</html>
